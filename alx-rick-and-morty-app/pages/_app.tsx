@@ -10,3 +10,15 @@ export default function App({ Component, pageProps }: AppProps) {
     </ApolloProvider>
   );
 }
+import ErrorBoundary from "@/components/ErrorBoundary";
+
+function MyApp({ Component, pageProps }: any) {
+  return (
+    <ErrorBoundary>
+      <Component {...pageProps} />
+    </ErrorBoundary>
+  );
+}
+
+export default MyApp;
+
