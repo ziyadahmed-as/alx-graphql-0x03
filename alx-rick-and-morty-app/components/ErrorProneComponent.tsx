@@ -1,7 +1,7 @@
 import React from "react";
 
 const ErrorProneComponent: React.FC = () => {
-  throw new Error("This is a test error!");
+  throw new Error("Testing Sentry error capture!");
 };
 
 export default ErrorProneComponent;
